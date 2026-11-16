@@ -98,7 +98,10 @@ from macOS, or from a Linux install (`/boot/efi`) if macOS won't boot.
 # Known Issues
 
 - MIPI (IPU6) webcam and fingerprint reader are not supported.
-- HDMI/DP **audio** from the iGPU does not work yet (see [b00t0x/WhateverXe#124](https://github.com/b00t0x/WhateverXe/issues/124)).
+- HDMI/DP **audio** from the iGPU is untested here. It works on the sister XPS 17 9720 (Alder Lake) with WhateverXe's
+  `-wex-hdmi-audio` and SimpleHDA ([b00t0x/WhateverXe#124](https://github.com/b00t0x/WhateverXe/issues/124)).
+- **Video wallpapers and screensavers** (for example Aerial) can freeze the GPU: when the video process exits with work
+  still in flight, macOS can't restart the GPU and the screen stays frozen until a reboot. Use a still wallpaper.
 - **Undervolting:** keep the System Agent and I/O planes at 0 mV with the iGPU in use. Negative SA/IO offsets caused
   silent single-bit memory corruption (APFS damage) on the sister XPS 17 9720 while CPU/Cache offsets were fine.
 
