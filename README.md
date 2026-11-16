@@ -36,6 +36,8 @@ The XPS 13 Plus 9320 now runs macOS Tahoe with **native Iris Xe acceleration**, 
 [WhateverXe](https://github.com/b00t0x/WhateverXe) and the XPS fixes collected on the `xps-unified` branch of
 [jkbuha/WhateverXe](https://github.com/jkbuha/WhateverXe/tree/xps-unified). That is the same kext used by the
 [XPS 17 9720 repo](https://github.com/jkbuha/XPS-9720-AlderLake-OpenCore); the two laptops differ only in boot-args.
+The same kext also runs the XPS 13 9310 (Tiger Lake, Iris Xe `8086:9A49`), with Tiger Lake-specific fixes
+(POSH context repair, hardware-encode guard) enabled only there.
 
 Built-in audio works through **AudShim**, a small kext that talks to the cAVS DSP, SoundWire, the RT1316 amplifiers
 and the RT714 microphones (Intel SOF firmware + topology), plus its `XeSpeakers` audio plug-in for macOS.
