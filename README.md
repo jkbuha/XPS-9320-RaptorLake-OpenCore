@@ -102,7 +102,7 @@ from macOS, or from a Linux install (`/boot/efi`) if macOS won't boot.
   `-wex-hdmi-audio` and SimpleHDA ([b00t0x/WhateverXe#124](https://github.com/b00t0x/WhateverXe/issues/124)).
 - **GPU hangs** (for example during a video wallpaper or screensaver) used to freeze the screen until a reboot. Since
   WhateverXe `xps-unified` 1ff94f4 the GPU recovers: expect a stall of about 10 seconds, after which the desktop
-  continues. The app whose GPU work hung loses that work.
+  continues. The app whose GPU work hung loses that work and gets a GPU timeout error.
 - **Undervolting:** keep the System Agent and I/O planes at 0 mV with the iGPU in use. Negative SA/IO offsets caused
   silent single-bit memory corruption (APFS damage) on the sister XPS 17 9720 while CPU/Cache offsets were fine.
 
