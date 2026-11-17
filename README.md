@@ -47,7 +47,7 @@ and the RT714 microphones (Intel SOF firmware + topology), plus its `XeSpeakers`
 Graphics needs both halves of WhateverXe:
 
 1. `EFI/OC/Kexts/WhateverXe.kext` (in this repo): the Lilu plugin, built from `xps-unified`.
-2. **WhateverXe Graphics** (Apple's Tiger Lake driver bundles, installed into `/Library/Extensions` after macOS is installed).
+2. **WhateverXe Graphics** (Apple's Tiger Lake driver bundles, installed into `/Library/Extensions` after macOS is installed; 0.4.4 recommended).
    Follow the installation steps in the [WhateverXe README](https://github.com/b00t0x/WhateverXe).
 
 Boot-args specific to this machine:
