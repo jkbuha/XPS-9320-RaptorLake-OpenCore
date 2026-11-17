@@ -47,7 +47,9 @@ and the RT714 microphones (Intel SOF firmware + topology), plus its `XeSpeakers`
 Graphics needs both halves of WhateverXe:
 
 1. `EFI/OC/Kexts/WhateverXe.kext` (in this repo): the Lilu plugin, built from `xps-unified`.
-2. **WhateverXe Graphics** (Apple's Tiger Lake driver bundles, installed into `/Library/Extensions` after macOS is installed; 0.4.4 recommended).
+2. **WhateverXe Graphics** 0.4.4 (Apple's Tiger Lake driver bundles, installed into `/Library/Extensions` after macOS is installed).
+
+As in the WhateverXe 0.8.3 setup, AMFI stays on: [AMFIAnchor](https://github.com/b00t0x/AMFIAnchor) 0.1.2 and `AMFIAnchorInjector.kext` (the Graphics signing CA) load right after Lilu, in place of AMFIPass, whose entry is left disabled.
    Follow the installation steps in the [WhateverXe README](https://github.com/b00t0x/WhateverXe).
 
 Boot-args specific to this machine:
@@ -113,7 +115,7 @@ from macOS, or from a Linux install (`/boot/efi`) if macOS won't boot.
 acidanthera (OpenCore, Lilu, VirtualSMC, AppleALC, HibernationFixup, RestrictEvents, BrightnessKeys),
 [b00t0x](https://github.com/b00t0x/WhateverXe) (WhateverXe), zxystd (itlwm / IntelBluetoothFirmware),
 VoodooI2C team, [JulioNectar](https://github.com/JulioNectar/Hackintosh-XPS13Plus-IrisXe-Tahoe) (AudShim, XPS 13 Plus Tahoe work),
-anv1552 / Thatisjigen (HybridPM), dhinakg (AMFIPass), USBToolBox.
+anv1552 / Thatisjigen (HybridPM), dhinakg (AMFIPass), b00t0x (AMFIAnchor), USBToolBox.
 
 # Donate
 
